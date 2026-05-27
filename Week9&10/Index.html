@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Order List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="order-container">
+    <h2>Grocery List</h2>
+
+    <div class="order-layout">
+      <form id="orderForm" class="order-form">
+        <label for="orderInput" class="form-title">Order Form</label>
+        <input type="text" id="orderInput" placeholder="Enter order item" required>
+        <div class="btn-wrapper">
+          <button type="submit">Add Order</button>
+        </div>
+      </form>
+
+      <div class="order-list">
+        <h3>Current Orders</h3>
+        <div class="list-container">
+          <ul id="orderList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <p>Order has been successfully added!</p>
+      <button type="button" id="closePopupBtn">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
